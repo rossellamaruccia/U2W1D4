@@ -1,0 +1,70 @@
+body {
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #666666;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+h1 {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+}
+
+div {
+  padding: 5em;
+  margin: 15px;
+  box-shadow: 4px 5px 15px -2px #000000;
+  position: relative;
+}
+
+.yellow {
+  background: #f8f8c6;
+  background: linear-gradient(
+    180deg,
+    rgba(248, 248, 198, 1) 0%,
+    rgba(233, 233, 178, 1) 62%,
+    rgba(145, 145, 145, 1) 100%
+  );
+  transform: rotate(357deg);
+}
+
+.green {
+  background: #caf9c9;
+  background: linear-gradient(
+    180deg,
+    rgba(202, 249, 201, 1) 0%,
+    rgba(189, 229, 190, 1) 62%,
+    rgba(145, 145, 145, 1) 100%
+  );
+  transform: rotate(10deg);
+}
+
+.purple {
+  background: #c9c8f2;
+  background: linear-gradient(
+    180deg,
+    rgba(201, 200, 242, 1) 0%,
+    rgba(187, 186, 218, 1) 62%,
+    rgba(145, 145, 145, 1) 100%
+  );
+  transform: rotate(345deg);
+}
+
+div:hover{
+    box-shadow: 5px 6px 6px 4px rgba(0,0,0,0.85);
+  transform: rotate(0deg);
+  transform: scale(1.1, 1.1);
+  z-index: +1
+}
+
