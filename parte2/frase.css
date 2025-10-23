@@ -21,10 +21,10 @@
     font-weight: bold;
 }
 
-i{
+i:first-child{
     position: absolute;
     opacity: 0;
-    animation: move 3s linear 1s forwards
+    animation: move 1s ease-in 1s forwards
 }
 
 @keyframes move {
@@ -43,13 +43,16 @@ i{
 }
 
 
-
 i:nth-child(2){
-    display: none;
-    transform: translateY(15px);
+    position: absolute;
+    opacity: 0;
+    animation: move 1s ease-in 3s forwards
 }
 
+
+
 i:nth-child(3){
-    display:none;
-    transform: translateY(15px);
+    position: absolute;
+    opacity: 0;
+    animation: move 1s ease-in 5s forwards
 }
