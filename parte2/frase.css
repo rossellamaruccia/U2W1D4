@@ -8,3 +8,48 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+#testoAlternato{
+    padding: 30px;
+    border: 2px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 35%;
+    position: relative;
+}
+
+.parole{
+    color: #6C8A9E;
+    font-weight: bold;
+}
+
+i{
+    position: absolute;
+    opacity: 0;
+    animation: move 3s linear 1s forwards
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+}
+
+
+
+i:nth-child(2){
+    display: none;
+    transform: translateY(15px);
+}
+
+i:nth-child(3){
+    display:none;
+    transform: translateY(15px);
+}
