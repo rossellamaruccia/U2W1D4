@@ -22,13 +22,13 @@ p {
 }
 
 div {
-  visibility: collapse;
   padding: 5em;
   margin: 15px;
   box-shadow: 4px 5px 15px -2px #000000;
 }
 
 .yellow {
+  visibility: collapse;
   background: #f8f8c6;
   background: linear-gradient(
     180deg,
@@ -41,6 +41,7 @@ div {
   }
 
 .green {
+  visibility: collapse;
   background: #caf9c9;
   background: linear-gradient(
     180deg,
@@ -48,11 +49,12 @@ div {
     rgba(189, 229, 190, 1) 62%,
     rgba(145, 145, 145, 1) 100%
   );
-  transform: rotate(10deg);
+  transform: rotate(10deg) scale(1);
   animation: appear 1s linear 2s forwards;
 }
 
 .purple {
+  visibility: collapse;
   background: #c9c8f2;
   background: linear-gradient(
     180deg,
@@ -74,39 +76,15 @@ div:hover{
 /* extra */
 
 @keyframes appear {
-  0% {
-    visibility: visible;
+  from {
     position: absolute;
-    transform: translate(0, 0);
-    width: 100vw;
-    height: 100vh;
-  }
-
-  15%{
-    width: 80vw;
-    height: 80vh;
-  }
-
-  30%{
-    width: 60vw;
-    height: 60vh;
-  }
+    
+    transform: translate(0, 0) scale(6);
   
-  60%{
-
-    width: 40vw;
-    height: 40vh;
   }
 
-  80%{
-    width: 20vw;
-    height: 20vh;
-  }
-
-  100%{
-    visibility: visible;
+to {
     position: relative;
-    width: fit-content;
-    height: fit-content;
+    visibility: visible;
   }
 }
