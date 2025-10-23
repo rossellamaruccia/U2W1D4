@@ -24,7 +24,7 @@
 i:first-child{
     position: absolute;
     opacity: 0;
-    animation: move 1s ease-in 1s forwards
+    animation: move 1s ease-in 1s forwards;
 }
 
 @keyframes move {
@@ -46,7 +46,7 @@ i:first-child{
 i:nth-child(2){
     position: absolute;
     opacity: 0;
-    animation: move 1s ease-in 3s forwards
+    animation: move 1s ease-in 3s forwards;
 }
 
 
@@ -54,5 +54,5 @@ i:nth-child(2){
 i:nth-child(3){
     position: absolute;
     opacity: 0;
-    animation: move 1s ease-in 5s forwards
+    animation: move 1s ease-in 5s forwards;
 }

@@ -22,10 +22,12 @@ p {
 }
 
 div {
+  opacity: 0;
   padding: 5em;
   margin: 15px;
   box-shadow: 4px 5px 15px -2px #000000;
   position: relative;
+  
 }
 
 .yellow {
@@ -37,6 +39,7 @@ div {
     rgba(145, 145, 145, 1) 100%
   );
   transform: rotate(357deg);
+  animation: appear 5s linear 1s forwards;
 }
 
 .green {
@@ -48,6 +51,7 @@ div {
     rgba(145, 145, 145, 1) 100%
   );
   transform: rotate(10deg);
+  animation: appear 5s linear 4s forwards;
 }
 
 .purple {
@@ -59,6 +63,7 @@ div {
     rgba(145, 145, 145, 1) 100%
   );
   transform: rotate(345deg);
+  animation: appear 5s linear 8s forwards;
 }
 
 div:hover{
@@ -68,3 +73,43 @@ div:hover{
   z-index: +1
 }
 
+/* extra */
+
+@keyframes appear {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  15%{
+    opacity: 1;
+    width: 80vw;
+    height: 80vh;
+  }
+
+  30%{
+    opacity: 1;
+    width: 60vw;
+    height: 60vh;
+  }
+  
+  60%{
+    opacity: 1;
+    width: 40vw;
+    height: 40vh;
+  }
+
+  80%{
+    opacity: 1;
+    width: 20vw;
+    height: 20vh;
+  }
+
+  100%{
+    opacity: 1;
+    width: fit-content;
+    height: fit-content;
+  }
+}
